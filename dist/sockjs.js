@@ -1600,7 +1600,7 @@ AbstractXHRObject.prototype._start = function(method, url, payload, opts) {
   };
 
   try {
-    self.xhr.send(payload);
+    //self.xhr.send(payload);
   } catch (e) {
     self.emit('finish', 0, '');
     self._cleanup(false);
